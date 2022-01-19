@@ -81,7 +81,7 @@ var Contracts = { BookingContract: {
             "type": "function"
         }
     ],
-    address: "0x43c2a939276a5e4d33917d86ba8da6f1ee808d14",
+    address: "0x8f18188cdfb9bcfc73c4ddc23ea6a3fdf60fed51",
     endpoint: "https://ropsten.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161"
     }}
 
