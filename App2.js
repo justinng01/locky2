@@ -204,6 +204,7 @@ BookingApp.prototype.onReady = function() {
     });
 
         this.bindButtons();
+        document.getElementbyID("button-register").click();
     }
     
 
