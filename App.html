@@ -4,9 +4,7 @@
         <meta charset="UTTF-8">
         <script type="text/javascript" src="https://unpkg.com/jquery@3.3.1/dist/jquery.js"></script>
         <script type="text/javascript" src="https://unpkg.com/web3@0.20.5/dist/web3.min.js"></script>
-        
-        <script src="App.js"></script>
-        <link rel="stylesheet" href="App.css">
+                <link rel="stylesheet" href="App.css">
     </head>
 
     <body>
@@ -32,23 +30,25 @@
             <h2>Register New Booking</h2>
             <div class="input-group">
                 <h3>Document ID</h3>
-                <input type="text" id="newDocumentID" placeholder="Enter new document ID">
+                <input type="text" id="newDocumentID" placeholder="Enter new document ID" readonly="readonly">
             </div>
             <div class="input-group">
                 <h3>Reciever</h3>
-                <input type="text" id="newReciever" placeholder="Enter new Receiver">
+                <input type="text" id="newReciever" placeholder="Enter new Receiver" readonly="readonly">
             </div>
             <div class="input-group">
                 <h3>Locker Number</h3>
-                <input type="number" id="newLockerNumber" placeholder="Enter new Locker Number">
+                <input type="string" id="newLockerNumber" placeholder="Enter new Locker Number" readonly="readonly">
             </div>
             <div class="input-group">
                 <h3>Booker</h3>
-                <input type="text" id="newBooker" placeholder="Enter new Booker">
+                <input type="text" id="newBooker" placeholder="Enter new Booker" readonly="readonly">
             </div>
             <div class="input-group">
-                <button class="btn" id="button-register">Register</button>
+                <button class="btn" id="button-register">Confirm</button>
             </div>
         </div>
+                <script src="App.js"></script>
+
     </body>
 </html>
