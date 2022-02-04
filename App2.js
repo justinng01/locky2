@@ -46,6 +46,11 @@ var Contracts = { BookingContract: {
 				"internalType": "string",
 				"name": "locker",
 				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "booker",
+				"type": "string"
 			}
 		],
 		"stateMutability": "view",
@@ -108,6 +113,11 @@ var Contracts = { BookingContract: {
 			{
 				"internalType": "string",
 				"name": "_locker",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_booker",
 				"type": "string"
 			}
 		],
