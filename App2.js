@@ -46,11 +46,6 @@ var Contracts = { BookingContract: {
 				"internalType": "string",
 				"name": "locker",
 				"type": "string"
-			},
-			{
-				"internalType": "string",
-				"name": "booker",
-				"type": "string"
 			}
 		],
 		"stateMutability": "view",
@@ -114,11 +109,6 @@ var Contracts = { BookingContract: {
 				"internalType": "string",
 				"name": "_locker",
 				"type": "string"
-			},
-			{
-				"internalType": "string",
-				"name": "_booker",
-				"type": "string"
 			}
 		],
 		"name": "registerNewBooking",
@@ -169,16 +159,14 @@ BookingApp.prototype.bindButtons = function() {
 BookingApp.prototype.registerNewReceive = function(){
     var newReciever2 = $("#newReciever2").val();
     var newLockerNumber2 = $("#newLockerNumber2").val();
-    var newBooker2 = $("#newBooker2").val();
-    $("#message").text("Registering new receive: " + newReciever2 + newLockerNumber2 + newBooker2);
+    $("#message").text("Registering new receive: " + newReciever2 + newLockerNumber2);
 
-    this.instance.registerNewReceive(newReciever2, newLockerNumber2, newBooker2,
+    this.instance.registerNewReceive(newReciever2, newLockerNumber2,
         { from: this.web3.eth.accounts[0], gas : 1000000, gasPrice: 1000000000, gasLimit: 10000000},
         function() {
             if (receipt.status == 1) {
                 $("#newReciever2").val("");
                 $("#newLockerNumber2").val("");
-                $("#newBooker2").val("");
             }
             else{
                 $("#message").text("Registration Failed");
